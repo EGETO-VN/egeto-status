@@ -1,0 +1,159 @@
+{
+  "schemaVersion": "1.1",
+  "generatedAt": "2026-09-29T20:55:00+07:00",
+  "health": "green",
+  "headline": "Product flow healthy",
+  "mvpProgress": 61,
+  "forecast": "05–10 Oct",
+  "milestone": {
+    "code": "P6",
+    "name": "Records · Home · Vault",
+    "state": "active",
+    "progress": 72
+  },
+  "phases": [
+    {
+      "code": "P0",
+      "label": "Bootstrap",
+      "state": "done"
+    },
+    {
+      "code": "P1",
+      "label": "Foundation",
+      "state": "done"
+    },
+    {
+      "code": "P2",
+      "label": "Identity",
+      "state": "done"
+    },
+    {
+      "code": "P3",
+      "label": "Trust",
+      "state": "done"
+    },
+    {
+      "code": "P4",
+      "label": "Activity",
+      "state": "done"
+    },
+    {
+      "code": "P5",
+      "label": "Today",
+      "state": "done"
+    },
+    {
+      "code": "P6",
+      "label": "Records",
+      "state": "active"
+    },
+    {
+      "code": "P7",
+      "label": "Memory",
+      "state": "queued"
+    },
+    {
+      "code": "P8",
+      "label": "AI",
+      "state": "queued"
+    },
+    {
+      "code": "P9",
+      "label": "Hardening",
+      "state": "queued"
+    },
+    {
+      "code": "P10",
+      "label": "Pilot",
+      "state": "queued"
+    }
+  ],
+  "teams": [
+    {
+      "code": "G1",
+      "name": "Product",
+      "state": "attention",
+      "result": "Phase 6 acceptance preserved",
+      "done": "Phase 6 READY and write-decision material prepared",
+      "now": "Define rendered read-only surface acceptance",
+      "next": "Seed Phase 7 evidence when independent"
+    },
+    {
+      "code": "G2",
+      "name": "Backend",
+      "state": "steady",
+      "result": "Read foundations integrated",
+      "done": "Home/Asset and Vault read contracts completed",
+      "now": "Defect-only support for Web integration",
+      "next": "No new backend scope unless a verified defect appears"
+    },
+    {
+      "code": "G3",
+      "name": "Web",
+      "state": "building",
+      "result": "Application-state journeys integrated",
+      "done": "Read-only Home/Asset and Vault journey states completed",
+      "now": "Build rendered read-only Web surface",
+      "next": "Accessibility/responsive/E2E on stable surface"
+    },
+    {
+      "code": "G4",
+      "name": "Trust",
+      "state": "watching",
+      "result": "Latest Web candidate verified clean",
+      "done": "Security/privacy/adversarial verification completed",
+      "now": "Prepare D1 checks for rendered surface",
+      "next": "Verify accessibility/browser/performance evidence"
+    },
+    {
+      "code": "OPS",
+      "name": "Joint Ops",
+      "state": "commanding",
+      "result": "Pipeline active; public dashboard publishing",
+      "done": "Joint command and sanitized visibility plane established",
+      "now": "Keep flow moving and publish dashboard",
+      "next": "Integrate verified rendered surface and close Phase 6"
+    }
+  ],
+  "workInFlight": 0,
+  "activeIncident": {
+    "state": "none",
+    "label": "No active product incident",
+    "summary": "Visibility work is isolated; product flow continues",
+    "workContinues": true
+  },
+  "founderAction": {
+    "required": false,
+    "label": "No blocking decision now",
+    "impact": "Read-only Phase 6 continues automatically",
+    "state": "not-needed"
+  },
+  "gates": [
+    {
+      "id": "PH6-WRITE",
+      "label": "Phase 6 write capability",
+      "state": "open-nonblocking",
+      "impact": "Write-enabled journeys remain deferred until explicit Founder approval",
+      "actions": [
+        "Approve granular model",
+        "Defer write capability",
+        "Request revision"
+      ]
+    }
+  ],
+  "control": {
+    "mode": "locked",
+    "label": "Secure Founder Controls",
+    "message": "Viewing is public. Command submission requires an authenticated control backend.",
+    "commands": [
+      "Send directive",
+      "Change priority",
+      "Approve gate",
+      "Defer gate",
+      "Request revision"
+    ]
+  },
+  "nextFocus": "PH6-WEB-02 rendered read-only surface + D1 shift-left",
+  "lastMilestone": "PH6-WEB-01 read-only application journeys integrated",
+  "lastUpdatedHuman": "20:55 · 29 Sep"
+}

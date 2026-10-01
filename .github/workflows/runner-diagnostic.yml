@@ -1,0 +1,12 @@
+name: runner-diagnostic
+on:
+  pull_request:
+permissions:
+  contents: read
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    timeout-minutes: 3
+    steps:
+      - name: Confirm hosted runner acquisition
+        run: echo "EGETO public runner diagnostic acquired a GitHub-hosted runner."

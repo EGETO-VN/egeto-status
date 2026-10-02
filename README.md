@@ -16,7 +16,7 @@ Public sanitized executive dashboard for EGETO.
 
 Expected after GitHub Pages is enabled:
 
-`https://egetovn.github.io/egeto-status/`
+`https://egeto-vn.github.io/egeto-status/`
 
 GitHub Pages must be configured once in:
 

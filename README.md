@@ -1,35 +1,44 @@
 # EGETO Founder Command Center
 
-Public sanitized executive dashboard for EGETO.
+Public GitHub Pages shell for the EGETO Founder Command Center.
 
-## Dashboard V2
+## Dashboard
 
-- MVP and current-phase progress
-- milestone runway
-- lane-by-lane G1 / G2 / G3 / G4 / Joint Ops results
-- Done / Now / Next for each lane
-- incident watch
-- Founder Action gate queue
-- Founder command console UI
+The shell presents sanitized executive information for the Founder, including:
+- MVP and current-phase evidence progress;
+- milestone runway;
+- lane-by-lane G1 / G2 / G3 / G4 / Joint Ops summaries;
+- Done / Now / Next;
+- incident state;
+- Founder Action gate queue;
+- bounded Founder command controls.
 
 ## Public URL
 
-Expected after GitHub Pages is enabled:
-
 `https://egeto-vn.github.io/egeto-status/`
 
-GitHub Pages must be configured once in:
+GitHub Pages deploys from GitHub Actions via `.github/workflows/pages.yml`.
 
-**Settings → Pages → Build and deployment → Source = GitHub Actions**
+## Access model
 
-The deploy workflow is already included in this repository.
+The **static shell is publicly hosted**, but protected operational dashboard data is not anonymously readable.
 
-## Founder Controls
+Before a valid Founder session:
+- the UI shows the PIN gate;
+- protected status is not loaded;
+- Founder commands are unavailable.
 
-Public viewing requires no login.
+After successful server-side PIN verification:
+- the shell loads only sanitized allowlisted executive metadata from the Supabase `founder-control` backend;
+- a short-lived Founder session enables bounded audited commands;
+- the PIN, PIN hash, service role credentials and private repository evidence are never stored in this public repository.
 
-Command submission is intentionally locked until an authenticated Founder-control backend is approved and connected. The prepared EGETO contract recommends an authenticated Supabase command queue; no anonymous control path is permitted.
+## Source of truth
+
+This repository is only a public presentation shell.
+
+Canonical project truth remains the private repository `EGETO-VN/EGETO` on `main`. Protected dashboard state is a runtime projection and must be synchronized from that canonical source.
 
 ## Privacy
 
-This repository contains only sanitized executive metadata and static dashboard assets. EGETO source code, private Control Tower evidence, security findings, technical identifiers, secrets and PII remain private.
+This public repository contains static dashboard assets only. EGETO source code, raw Control Tower evidence, security findings, technical identifiers, secrets, real PII and customer data remain private.
